@@ -1,0 +1,9 @@
+args:
+  cluster: A dictionary mapping one or more job names to (i) a list ofnetwork addresses,
+    or (ii) a dictionary mapping integer task indices tonetwork addresses; or a tf.train.ClusterDef
+    protocol buffer.
+error_message: Multiple args
+name: tf.train.ClusterSpec
+returns: A dictionary mapping job names to lists or dictionariesdescribing the tasks
+  in those jobs.
+url: https://www.tensorflow.org/api_docs/python/tf/train/ClusterSpec

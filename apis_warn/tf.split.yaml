@@ -1,0 +1,16 @@
+args:
+  axis: An int or scalar int32 Tensor. The dimension along whichto split. Must be
+    in the range [-rank(value), rank(value)). Defaults to0.
+  name: A name for the operation (optional).
+  num: Optional, an int, used to specify the number of outputs when itcannot be inferred
+    from the shape of size_splits.
+  num_or_size_splits: Either an int indicating the number of splitsalong axis or a
+    1-D integer Tensor or Python list containing the sizesof each output tensor along
+    axis. If an int, then it must evenlydivide value.shape[axis]; otherwise the sum
+    of sizes along the splitaxis must match that of the value.
+  value: The Tensor to split.
+name: tf.split
+returns: if num_or_size_splits is an int returns a list ofnum_or_size_splits Tensor
+  objects; if num_or_size_splits is a 1-Dlist or 1-D Tensor returns num_or_size_splits.get_shape[0]Tensor
+  objects resulting from splitting value.
+url: https://www.tensorflow.org/api_docs/python/tf/split

@@ -1,0 +1,15 @@
+args:
+  a: Tensor of type float32 or float64.
+  axes: Either a scalar N, or a list or an int32 Tensor of shape [2, k].If axes is
+    a scalar, sum over the last N axes of a and the first N axes ofb in order. If
+    axes is a list or Tensor the first and second row containthe set of unique integers
+    specifying axes along which the contraction iscomputed, for a and b, respectively.
+    The number of axes for a andb must be equal. If axes=0, computes the outer product
+    between a andb.
+  b: Tensor with the same type as a.
+  name: A name for the operation (optional).
+name: tf.tensordot
+returns: A Tensor with the same type as a.
+url: https://www.tensorflow.org/api_docs/python/tf/tensordot
+warn_message:
+- arg_name or arg_desc too long

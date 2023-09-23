@@ -1,0 +1,30 @@
+args:
+  checkpoint: The tf.train.Checkpoint instance to save and managecheckpoints for.
+  checkpoint_interval: An integer, indicates the minimum step intervalbetween two
+    checkpoints.
+  checkpoint_name: Custom name for the checkpoint file.
+  directory: The path to a directory in which to write checkpoints. Aspecial file
+    named "checkpoint" is also written to this directory (in ahuman-readable text
+    format) which contains the state of theCheckpointManager.
+  init_fn: Callable. A function to do customized intialization if nocheckpoints are
+    in the directory.
+  keep_checkpoint_every_n_hours: Upon removal from the active set, acheckpoint will
+    be preserved if it has been at leastkeep_checkpoint_every_n_hours since the last
+    preserved checkpoint. Thedefault setting of None does not preserve any checkpoints
+    in this way.
+  max_to_keep: An integer, the number of checkpoints to keep. Unlesspreserved by keep_checkpoint_every_n_hours,
+    checkpoints will bedeleted from the active set, oldest first, until only max_to_keepcheckpoints
+    remain. If None, no checkpoints are deleted and everythingstays in the active
+    set. Note that max_to_keep=None will keep allcheckpoint paths in memory and in
+    the checkpoint state protocol bufferon disk.
+  step_counter: A tf.Variable instance for checking the current stepcounter value,
+    in case users want to save checkpoints every N steps.
+error_message: Multiple args
+name: tf.train.CheckpointManager
+returns: The restored checkpoint path if the lastest checkpoint is found andrestored.
+  Otherwise None.
+url: https://www.tensorflow.org/api_docs/python/tf/train/CheckpointManager
+warn_message:
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long

@@ -1,0 +1,8 @@
+args:
+  input: A Tensor. 1-D or higher.
+  multiples: 'A Tensor. Must be one of the following types: int32, int64.1-D. Length
+    must be the same as the number of dimensions in input'
+  name: A name for the operation (optional).
+name: tf.tile
+returns: A Tensor. Has the same type as input.
+url: https://www.tensorflow.org/api_docs/python/tf/tile

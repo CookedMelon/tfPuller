@@ -1,0 +1,8 @@
+args:
+  dtype: Data type of the TensorArray.
+  dynamic_size: Whether the TensorArray can grow past its initial size.
+  element_shape: The shape of each element in the TensorArray.
+  infer_shape: Whether shape inference is enabled.
+error_message: Multiple args
+name: tf.TensorArraySpec
+url: https://www.tensorflow.org/api_docs/python/tf/TensorArraySpec

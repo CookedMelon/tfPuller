@@ -1,0 +1,5 @@
+args:
+  expected_cardinality: The expected cardinality of the input dataset.
+name: tf.data.experimental.assert_cardinality
+returns: A Dataset transformation function, which can be passed totf.data.Dataset.apply.
+url: https://www.tensorflow.org/api_docs/python/tf/data/experimental/assert_cardinality

@@ -1,0 +1,7 @@
+args:
+  name: A name for the operation (optional).
+  x: A tf.Tensor of type bfloat16, half, float32, float64,complex64, complex128
+name: tf.sqrt
+returns: A tf.Tensor of same size, type and sparsity as x.If x is a SparseTensor,
+  returnsSparseTensor(x.indices, tf.math.sqrt(x.values, ...), x.dense_shape)
+url: https://www.tensorflow.org/api_docs/python/tf/sqrt

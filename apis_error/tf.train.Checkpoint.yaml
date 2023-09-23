@@ -1,0 +1,9 @@
+args:
+  kwargs: Keyword arguments are set as attributes of this object, and aresaved with
+    the checkpoint. All kwargs must be trackable objects, or anested structure of
+    trackable objects (list, dict, or tuple).
+  root: The root object to checkpoint. root may be a trackable object orWeakRef of
+    a trackable object.
+error_message: Multiple args
+name: tf.train.Checkpoint
+url: https://www.tensorflow.org/api_docs/python/tf/train/Checkpoint

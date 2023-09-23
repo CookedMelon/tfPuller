@@ -1,0 +1,9 @@
+args:
+  axis: A 0-D int32 Tensor. The dimension along which to split. Must be inrange [-rank,
+    rank), where rank is the number of dimensions in the inputSparseTensor.
+  name: A name for the operation (optional).
+  num_split: A Python integer. The number of ways to split.
+  sp_input: The SparseTensor to split.
+name: tf.sparse.split
+returns: num_split SparseTensor objects resulting from splitting value.
+url: https://www.tensorflow.org/api_docs/python/tf/sparse/split

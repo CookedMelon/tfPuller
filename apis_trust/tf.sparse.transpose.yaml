@@ -1,0 +1,7 @@
+args:
+  name: A name prefix for the returned tensors (optional).
+  perm: A permutation vector of the dimensions of sp_input.
+  sp_input: The input SparseTensor.
+name: tf.sparse.transpose
+returns: A transposed SparseTensor.
+url: https://www.tensorflow.org/api_docs/python/tf/sparse/transpose

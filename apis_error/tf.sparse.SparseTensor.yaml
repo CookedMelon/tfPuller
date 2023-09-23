@@ -1,0 +1,6 @@
+args:
+  dense_shape: A 1-D int64 tensor of shape [ndims].
+  indices: A 2-D int64 tensor of shape [N, ndims].
+  values: A 1-D tensor of any type and shape [N].
+name: tf.sparse.SparseTensor
+url: https://www.tensorflow.org/api_docs/python/tf/sparse/SparseTensor

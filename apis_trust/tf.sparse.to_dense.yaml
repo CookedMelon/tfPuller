@@ -1,0 +1,11 @@
+args:
+  default_value: Scalar value to set for indices not specified insp_input.  Defaults
+    to zero.
+  name: A name prefix for the returned tensors (optional).
+  sp_input: The input SparseTensor.
+  validate_indices: A boolean value.  If True, indices are checked to makesure they
+    are sorted in lexicographic order and that there are no repeats.
+name: tf.sparse.to_dense
+returns: A dense tensor with shape sp_input.dense_shape and values specified bythe
+  non-empty values in sp_input. Indices not in sp_input are assigneddefault_value.
+url: https://www.tensorflow.org/api_docs/python/tf/sparse/to_dense

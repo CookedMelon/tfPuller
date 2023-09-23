@@ -1,0 +1,8 @@
+args:
+  encoding: An optional string. Defaults to "".Character encoding of input. Allowed
+    values are '' and 'utf-8'.Value '' is interpreted as ASCII.
+  input: A Tensor of type string. The input to be upper-cased.
+  name: A name for the operation (optional).
+name: tf.strings.upper
+returns: A Tensor of type string.
+url: https://www.tensorflow.org/api_docs/python/tf/strings/upper

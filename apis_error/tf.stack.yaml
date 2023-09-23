@@ -1,0 +1,8 @@
+args:
+  axis: An int. The axis to stack along. Defaults to the first dimension.Negative
+    values wrap around, so the valid range is [-(R+1), R+1).
+  name: A name for this operation (optional).
+  values: A list of Tensor objects with the same shape and type.
+name: tf.stack
+returns: {}
+url: https://www.tensorflow.org/api_docs/python/tf/stack

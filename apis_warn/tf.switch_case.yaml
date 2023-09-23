@@ -1,0 +1,14 @@
+args:
+  branch_fns: A dict mapping ints to callables, or a list of (int,callable) pairs,
+    or simply a list of callables (in which case the indexserves as the key). Each
+    callable must return a matching structure oftensors.
+  branch_index: An int Tensor specifying which of branch_fns should beexecuted.
+  default: Optional callable that returns a structure of tensors.
+  name: A name for this operation (optional).
+name: tf.switch_case
+returns: The tensors returned by the callable identified by branch_index, or thosereturned
+  by default if no key matches and default was provided, or thosereturned by the max-keyed
+  branch_fn if no default is provided.
+url: https://www.tensorflow.org/api_docs/python/tf/switch_case
+warn_message:
+- ret_desc too long

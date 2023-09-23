@@ -1,0 +1,5 @@
+args:
+  name: A name for the operation (optional).
+name: tf.timestamp
+returns: A Tensor of type float64.
+url: https://www.tensorflow.org/api_docs/python/tf/timestamp

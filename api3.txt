@@ -1,0 +1,13 @@
+tf.sparse.softmax
+tf.sparse.SparseTensor
+tf.SparseTensor
+tf.SparseTensorSpec
+tf.stack
+tf.TensorArray
+tf.TensorArraySpec
+tf.TensorShape
+tf.TensorSpec
+tf.train.Checkpoint
+tf.train.CheckpointManager
+tf.train.ClusterSpec
+tf.train.Coordinator

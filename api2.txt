@@ -1,0 +1,7 @@
+tf.split
+tf.squeeze
+tf.strings.unicode_split_with_offsets
+tf.strings.unicode_transcode
+tf.switch_case
+tf.tensordot
+tf.train.CheckpointOptions

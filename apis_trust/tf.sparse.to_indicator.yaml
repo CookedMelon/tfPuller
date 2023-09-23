@@ -1,0 +1,8 @@
+args:
+  name: A name prefix for the returned tensors (optional)
+  sp_input: A SparseTensor with values property of type int32 orint64.
+  vocab_size: A scalar int64 Tensor (or Python int) containing the new sizeof the
+    last dimension, all(0 <= sp_input.values < vocab_size).
+name: tf.sparse.to_indicator
+returns: A dense bool indicator tensor representing the indices with specified value.
+url: https://www.tensorflow.org/api_docs/python/tf/sparse/to_indicator

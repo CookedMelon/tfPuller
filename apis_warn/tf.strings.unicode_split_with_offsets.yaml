@@ -1,0 +1,20 @@
+args:
+  errors: 'Specifies the response when an input string can''t be convertedusing the
+    indicated encoding. One of:''strict'': Raise an exception for any illegal substrings.''replace'':
+    Replace illegal substrings with replacement_char.''ignore'': Skip illegal substrings.'
+  input: An N dimensional potentially ragged string tensor with shape[D1...DN].  N
+    must be statically known.
+  input_encoding: String name for the unicode encoding that should be used todecode
+    each string.
+  name: A name for the operation (optional).
+  replacement_char: The replacement codepoint to be used in place of invalidsubstrings
+    in input when errors='replace'.
+name: tf.strings.unicode_split_with_offsets
+returns: A tuple of N+1 dimensional tensors (codepoints, start_offsets).codepoints
+  is an int32 tensor with shape [D1...DN, (num_chars)].offsets is an int64 tensor
+  with shape [D1...DN, (num_chars)].The returned tensors are tf.Tensors if input is
+  a scalar, ortf.RaggedTensors otherwise.
+url: https://www.tensorflow.org/api_docs/python/tf/strings/unicode_split_with_offsets
+warn_message:
+- arg_name or arg_desc too long
+- ret_desc too long

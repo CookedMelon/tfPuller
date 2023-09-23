@@ -1,0 +1,12 @@
+args:
+  data: A Tensor with data that will be assembled in the output.
+  indices: A 1-D Tensor with indices into data. Has same rank assegment_ids.
+  name: A name for the operation (optional).
+  num_segments: An optional int32 scalar. Indicates the size of the outputTensor.
+  segment_ids: A 1-D Tensor with indices into the output Tensor. Valuesshould be sorted
+    and can be repeated.
+name: tf.sparse.segment_sum
+returns: A tensor of the shape as data, except for dimension 0 whichhas size k, the
+  number of segments specified via num_segments orinferred for the last element in
+  segments_ids.
+url: https://www.tensorflow.org/api_docs/python/tf/sparse/segment_sum

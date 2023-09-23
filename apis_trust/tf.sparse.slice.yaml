@@ -1,0 +1,8 @@
+args:
+  name: A name for the operation (optional).
+  size: 1-D. tensor represents the size of the slice.
+  sp_input: The SparseTensor to split.
+  start: 1-D. tensor represents the start of the slice.
+name: tf.sparse.slice
+returns: A SparseTensor objects resulting from splicing.
+url: https://www.tensorflow.org/api_docs/python/tf/sparse/slice

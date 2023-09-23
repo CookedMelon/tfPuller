@@ -1,0 +1,6 @@
+args:
+  name: optional name of the operation.
+  sp_input: N-D SparseTensor, where N >= 2.
+name: tf.sparse.softmax
+returns: {}
+url: https://www.tensorflow.org/api_docs/python/tf/sparse/softmax

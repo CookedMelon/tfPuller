@@ -1,0 +1,30 @@
+args:
+  clear_after_read: 'Boolean (optional, default: True).  If True, clearTensorArray
+    values after reading them.  This disables read-manysemantics, but allows early
+    release of memory.'
+  colocate_with_first_write_call: If True, the TensorArray will becolocated on the
+    same device as the Tensor used on its first write(write operations include write,
+    unstack, and split).  If False,the TensorArray will be placed on the device determined
+    by the devicecontext available during its initialization.
+  dtype: (required) data type of the TensorArray.
+  dynamic_size: '(optional) Python bool: If true, writes to the TensorArraycan grow
+    the TensorArray past its initial size.  Default: False.'
+  element_shape: '(optional, default: None) A TensorShape object specifyingthe shape
+    constraints of each of the elements of the TensorArray. Neednot be fully defined.'
+  flow: (optional) A float Tensor scalar coming from an existingTensorArray.flow.
+    Only supported in graph mode.
+  handle: (optional) A Tensor handle to an existing TensorArray.  If thisis set, tensor_array_name
+    should be None. Only supported in graph mode.
+  infer_shape: '(optional, default: True) If True, shape inference isenabled.  In
+    this case, all elements must have the same shape.'
+  name: A name for the operation (optional).
+  size: '(optional) int32 scalar Tensor: the size of the TensorArray.Required if handle
+    is not provided.'
+  tensor_array_name: '(optional) Python string: the name of the TensorArray.This is
+    used when creating the TensorArray handle.  If this value isset, handle should
+    be None.'
+error_message: Multiple args
+name: tf.TensorArray
+url: https://www.tensorflow.org/api_docs/python/tf/TensorArray
+warn_message:
+- arg_name or arg_desc too long

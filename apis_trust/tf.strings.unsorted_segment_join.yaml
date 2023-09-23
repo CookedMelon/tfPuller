@@ -1,0 +1,11 @@
+args:
+  inputs: A list of tf.Tensor objects of type tf.string.
+  name: A name for the operation (optional).
+  num_segments: A scalar of type tf.int32 or tf.int64. Must benon-negative and larger
+    than any segment id.
+  segment_ids: A tensor whose shape is a prefix of inputs.shape and whosetype must
+    be tf.int32 or tf.int64. Negative segment ids are notsupported.
+  separator: The separator to use when joining. Defaults to "".
+name: tf.strings.unsorted_segment_join
+returns: A tf.string tensor representing the concatenated values, using the givenseparator.
+url: https://www.tensorflow.org/api_docs/python/tf/strings/unsorted_segment_join

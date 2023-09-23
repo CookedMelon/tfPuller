@@ -1,0 +1,6 @@
+args:
+  dims: A list of Dimensions, or None if the shape is unspecified.
+error_message: Multiple args
+name: tf.TensorShape
+returns: A list of integers or None for each dimension.
+url: https://www.tensorflow.org/api_docs/python/tf/TensorShape

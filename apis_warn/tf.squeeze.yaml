@@ -1,0 +1,11 @@
+args:
+  axis: An optional list of ints. Defaults to []. If specified, onlysqueezes the dimensions
+    listed. The dimension index starts at 0. It is anerror to squeeze a dimension
+    that is not 1. Must be in the range[-rank(input), rank(input)). Must be specified
+    if input is aRaggedTensor.
+  input: A Tensor. The input to squeeze.
+  name: A name for the operation (optional).
+name: tf.squeeze
+returns: A Tensor. Has the same type as input.Contains the same data as input, but
+  has one or more dimensions ofsize 1 removed.
+url: https://www.tensorflow.org/api_docs/python/tf/squeeze

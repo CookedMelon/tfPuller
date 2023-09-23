@@ -1,0 +1,10 @@
+args:
+  checkpoint_dir: The directory in which checkpoints are saved.
+  min_interval_secs: The minimum number of seconds between yieldingcheckpoints.
+  timeout: The maximum number of seconds to wait between checkpoints. If leftas None,
+    then the process will wait indefinitely.
+  timeout_fn: Optional function to call after a timeout.  If the functionreturns True,
+    then it means that no new checkpoints will be generated andthe iterator will exit.  The
+    function is called with no arguments.
+name: tf.train.checkpoints_iterator
+url: https://www.tensorflow.org/api_docs/python/tf/train/checkpoints_iterator

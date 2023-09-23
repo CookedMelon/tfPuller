@@ -1,0 +1,8 @@
+args:
+  indices: Indices to update.
+  name: Optional name for the operation.
+  tensor: Tensor to copy/update.
+  updates: Updates to apply at the indices.
+name: tf.tensor_scatter_nd_update
+returns: A new tensor with the given shape and updates applied according to theindices.
+url: https://www.tensorflow.org/api_docs/python/tf/tensor_scatter_nd_update

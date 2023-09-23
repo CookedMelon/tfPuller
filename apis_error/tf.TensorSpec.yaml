@@ -1,0 +1,7 @@
+args:
+  dtype: Value convertible to tf.DType. The type of the tensor values.
+  name: Optional name for the Tensor.
+  shape: Value convertible to tf.TensorShape. The shape of the tensor.
+error_message: Multiple args
+name: tf.TensorSpec
+url: https://www.tensorflow.org/api_docs/python/tf/TensorSpec
