@@ -1,0 +1,11 @@
+args:
+  Tout: 'A tf.DType from: tf.complex64, tf.complex128.'
+  compute_v: An optional bool. Defaults to True.If True then eigenvectors will be
+    computed and returned in v.Otherwise, only the eigenvalues will be computed.
+  input: 'A Tensor. Must be one of the following types: float32, float64, complex64,
+    complex128.Tensor input of shape [N, N].'
+  name: A name for the operation (optional).
+error_message: tds len error.[Returns need 1 tds]
+name: tf.raw_ops.Eig
+returns: A tuple of Tensor objects (e, v).
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/Eig

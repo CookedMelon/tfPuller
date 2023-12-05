@@ -1,0 +1,10 @@
+args:
+  algorithm: A Tensor of type int64. The RNG algorithm.
+  dtype: An optional tf.DType. Defaults to tf.float32.The type of the output.
+  name: A name for the operation (optional).
+  resource: A Tensor of type resource.The handle of the resource variable that stores
+    the state of the RNG.
+  shape: A Tensor. The shape of the output tensor.
+name: tf.raw_ops.StatefulStandardNormalV2
+returns: A Tensor of type dtype.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/StatefulStandardNormalV2

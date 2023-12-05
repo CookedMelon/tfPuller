@@ -1,0 +1,26 @@
+args:
+  baseline: Baseline value for the monitored quantity.Training will stop if the model
+    doesn't show improvement over thebaseline.
+  min_delta: Minimum change in the monitored quantityto qualify as an improvement,
+    i.e. an absolutechange of less than min_delta, will count as noimprovement.
+  mode: One of {"auto", "min", "max"}. In min mode,training will stop when the quantitymonitored
+    has stopped decreasing; in "max"mode it will stop when the quantitymonitored has
+    stopped increasing; in "auto"mode, the direction is automatically inferredfrom
+    the name of the monitored quantity.
+  monitor: Quantity to be monitored.
+  patience: Number of epochs with no improvementafter which training will be stopped.
+  restore_best_weights: Whether to restore model weights fromthe epoch with the best
+    value of the monitored quantity.If False, the model weights obtained at the last
+    step oftraining are used. An epoch will be restored regardlessof the performance
+    relative to the baseline. If no epochimproves on baseline, training will run for
+    patienceepochs and restore weights from the best epoch in that set.
+  start_from_epoch: Number of epochs to wait before startingto monitor improvement.
+    This allows for a warm-up period in whichno improvement is expected and thus training
+    will not be stopped.
+  verbose: Verbosity mode, 0 or 1. Mode 0 is silent, and mode 1displays messages when
+    the callback takes an action.
+name: tf.keras.callbacks.EarlyStopping
+url: https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/EarlyStopping
+warn_message:
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long

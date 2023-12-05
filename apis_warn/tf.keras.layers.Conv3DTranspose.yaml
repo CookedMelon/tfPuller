@@ -1,0 +1,52 @@
+args:
+  activation: Activation function to use.If you don't specify anything, no activation
+    is applied(see keras.activations).
+  activity_regularizer: Regularizer function applied tothe output of the layer (its
+    "activation")(see keras.regularizers).
+  bias_constraint: Constraint function applied to the bias vector(see keras.constraints).
+  bias_initializer: Initializer for the bias vector(see keras.initializers). Defaults
+    to 'zeros'.
+  bias_regularizer: Regularizer function applied to the bias vector(see keras.regularizers).
+  data_format: A string,one of channels_last (default) or channels_first.The ordering
+    of the dimensions in the inputs.channels_last corresponds to inputs with shape(batch_size,
+    depth, height, width, channels) while channels_firstcorresponds to inputs with
+    shape(batch_size, channels, depth, height, width).When unspecified, uses image_data_format
+    value found in your Kerasconfig file at ~/.keras/keras.json (if exists) else 'channels_last'.Defaults
+    to 'channels_last'.
+  dilation_rate: an integer or tuple/list of 3 integers, specifyingthe dilation rate
+    to use for dilated convolution.Can be a single integer to specify the same value
+    forall spatial dimensions.Currently, specifying any dilation_rate value != 1 isincompatible
+    with specifying any stride value != 1.
+  filters: Integer, the dimensionality of the output space(i.e. the number of output
+    filters in the convolution).
+  kernel_constraint: Constraint function applied to the kernel matrix(see keras.constraints).
+  kernel_initializer: Initializer for the kernel weights matrix(see keras.initializers).
+    Defaults to 'glorot_uniform'.
+  kernel_regularizer: Regularizer function applied tothe kernel weights matrix(see
+    keras.regularizers).
+  kernel_size: An integer or tuple/list of 3 integers, specifying thedepth, height
+    and width of the 3D convolution window.Can be a single integer to specify the
+    same value forall spatial dimensions.
+  output_padding: An integer or tuple/list of 3 integers,specifying the amount of
+    padding along the depth, height, andwidth.Can be a single integer to specify the
+    same value for allspatial dimensions.The amount of output padding along a given
+    dimension must belower than the stride along that same dimension.If set to None
+    (default), the output shape is inferred.
+  padding: one of "valid" or "same" (case-insensitive)."valid" means no padding. "same"
+    results in padding with zerosevenly to the left/right or up/down of the input
+    such that output hasthe same height/width dimension as the input.
+  strides: An integer or tuple/list of 3 integers,specifying the strides of the convolution
+    along the depth, height  and width.Can be a single integer to specify the same
+    value forall spatial dimensions.Specifying any stride value != 1 is incompatible
+    with specifyingany dilation_rate value != 1.
+  use_bias: Boolean, whether the layer uses a bias vector.
+name: tf.keras.layers.Conv3DTranspose
+returns: A tensor of rank 5 representingactivation(conv3dtranspose(inputs, kernel)
+  + bias).
+url: https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv3DTranspose
+warn_message:
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long

@@ -1,0 +1,8 @@
+args:
+  input: A Tensor of type string.A string tensor of the text to be processed.
+  name: A name for the operation (optional).
+  pattern: A Tensor of type string.A scalar string tensor containing the regular expression
+    to match the input.
+name: tf.strings.regex_full_match
+returns: A Tensor of type bool.
+url: https://www.tensorflow.org/api_docs/python/tf/strings/regex_full_match

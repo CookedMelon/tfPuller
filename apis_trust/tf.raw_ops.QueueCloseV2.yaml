@@ -1,0 +1,8 @@
+args:
+  cancel_pending_enqueues: An optional bool. Defaults to False.If true, all pending
+    enqueue requests that areblocked on the given queue will be canceled.
+  handle: A Tensor of type resource. The handle to a queue.
+  name: A name for the operation (optional).
+name: tf.raw_ops.QueueCloseV2
+returns: The created Operation.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/QueueCloseV2

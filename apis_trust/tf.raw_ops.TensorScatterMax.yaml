@@ -1,0 +1,8 @@
+args:
+  indices: 'A Tensor. Must be one of the following types: int32, int64.Index tensor.'
+  name: A name for the operation (optional).
+  tensor: A Tensor. Tensor to update.
+  updates: A Tensor. Must have the same type as tensor.Updates to scatter into output.
+name: tf.raw_ops.TensorScatterMax
+returns: A Tensor. Has the same type as tensor.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/TensorScatterMax

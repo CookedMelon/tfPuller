@@ -1,0 +1,8 @@
+args:
+  name: optional name of the operation.
+  sp_a: a SparseTensor operand whose dtype is real, and indiceslexicographically ordered.
+  sp_b: the other SparseTensor operand with the same requirements (and thesame shape).
+error_message: tds len error.[Returns need 1 tds]
+name: tf.sparse.maximum
+returns: {}
+url: https://www.tensorflow.org/api_docs/python/tf/sparse/maximum

@@ -1,0 +1,8 @@
+args:
+  labels: Tensor of shape [batch, max value in seq_length]
+  name: A name for this Op. Defaults to "collapse_repeated_labels".
+  seq_length: Tensor of shape [batch], sequence length of each batch element.
+error_message: tds len error.[Returns need 1 tds]
+name: tf.nn.collapse_repeated
+returns: A tuple (collapsed_labels, new_seq_length) where
+url: https://www.tensorflow.org/api_docs/python/tf/nn/collapse_repeated

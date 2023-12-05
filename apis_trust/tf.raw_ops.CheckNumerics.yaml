@@ -1,0 +1,8 @@
+args:
+  message: A string. Prefix of the error message.
+  name: A name for the operation (optional).
+  tensor: 'A Tensor. Must be one of the following types: bfloat16, half, float32,
+    float64.'
+name: tf.raw_ops.CheckNumerics
+returns: A Tensor. Has the same type as tensor.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/CheckNumerics

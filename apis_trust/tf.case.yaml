@@ -1,0 +1,11 @@
+args:
+  default: Optional callable that returns a list of tensors.
+  exclusive: True iff at most one predicate is allowed to evaluate to True.
+  name: A name for this operation (optional).
+  pred_fn_pairs: List of pairs of a boolean scalar tensor and a callable whichreturns
+    a list of tensors.
+  strict: A boolean that enables/disables 'strict' mode; see above.
+name: tf.case
+returns: The tensors returned by the first pair whose predicate evaluated to True,
+  orthose returned by default if none does.
+url: https://www.tensorflow.org/api_docs/python/tf/case

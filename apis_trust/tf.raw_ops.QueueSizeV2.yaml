@@ -1,0 +1,6 @@
+args:
+  handle: A Tensor of type resource. The handle to a queue.
+  name: A name for the operation (optional).
+name: tf.raw_ops.QueueSizeV2
+returns: A Tensor of type int32.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/QueueSizeV2

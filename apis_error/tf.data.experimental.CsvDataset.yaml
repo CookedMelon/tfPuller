@@ -1,0 +1,37 @@
+args:
+  buffer_size: (Optional.) A tf.int64 scalar denoting the number of bytesto buffer
+    while reading files. Defaults to 4MB.
+  compression_type: (Optional.) A tf.string scalar evaluating to one of"" (no compression),
+    "ZLIB", or "GZIP". Defaults to nocompression.
+  exclude_cols: (Optional.) A sorted list of column indices to exclude fromthe input
+    data. If specified, only the complement of this set of columnwill be parsed. Defaults
+    to parsing all columns. At most one ofselect_cols and exclude_cols can be specified.
+  field_delim: (Optional.) A tf.string scalar containing the delimitercharacter that
+    separates fields in a record. Defaults to ",".
+  filenames: A tf.string tensor containing one or more filenames.
+  header: (Optional.) A tf.bool scalar indicating whether the CSV file(s)have header
+    line(s) that should be skipped when parsing. Defaults toFalse.
+  na_value: (Optional.) A tf.string scalar indicating a value that willbe treated
+    as NA/NaN.
+  record_defaults: A list of default values for the CSV fields. Each item inthe list
+    is either a valid CSV DType (float32, float64, int32, int64,string), or a Tensor
+    object with one of the above types. One percolumn of CSV data, with either a scalar
+    Tensor default value for thecolumn if it is optional, or DType or empty Tensor
+    if required. Ifboth this and select_columns are specified, these must have the
+    samelengths, and column_defaults is assumed to be sorted in order ofincreasing
+    column index. If both this and 'exclude_cols' are specified,the sum of lengths
+    of record_defaults and exclude_cols should equalthe total number of columns in
+    the CSV file.
+  select_cols: (Optional.) A sorted list of column indices to select fromthe input
+    data. If specified, only this subset of columns will beparsed. Defaults to parsing
+    all columns. At most one of select_colsand exclude_cols can be specified.
+  use_quote_delim: (Optional.) A tf.bool scalar. If False, treatsdouble quotation
+    marks as regular characters inside of string fields(ignoring RFC 4180, Section
+    2, Bullet 5). Defaults to True.
+error_message: Multiple args
+name: tf.data.experimental.CsvDataset
+url: https://www.tensorflow.org/api_docs/python/tf/data/experimental/CsvDataset
+warn_message:
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long

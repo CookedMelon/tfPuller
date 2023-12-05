@@ -1,0 +1,8 @@
+args:
+  Tout: 'An optional tf.DType from: tf.complex64, tf.complex128. Defaults to tf.complex64.'
+  imag: A Tensor. Must have the same type as real.
+  name: A name for the operation (optional).
+  real: 'A Tensor. Must be one of the following types: float32, float64.'
+name: tf.raw_ops.Complex
+returns: A Tensor of type Tout.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/Complex

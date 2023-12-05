@@ -1,0 +1,32 @@
+args:
+  dense_defaults: 'A list of Tensor objects with types from: float32, int64, string.A
+    dict mapping string keys to Tensors.The keys of the dict must match the dense_keys
+    of the feature.'
+  dense_keys: A list of strings.A list of Ndense string Tensors (scalars).The keys
+    expected in the Examples features associated with dense values.
+  dense_shapes: A list of shapes (each a tf.TensorShape or list of ints).List of tuples
+    with the same length as dense_keys.The shape of the data for each dense feature
+    referenced by dense_keys.Required for any input tensors identified by dense_keys.  Must
+    beeither fully defined, or may contain an unknown first dimension.An unknown first
+    dimension means the feature is treated as havinga variable number of blocks, and
+    the output shape along this dimensionis considered unknown at graph build time.  Padding
+    is applied forminibatch elements smaller than the maximum number of blocks for
+    thegiven feature along this dimension.
+  input_dataset: A Tensor of type variant.
+  name: A name for the operation (optional).
+  num_parallel_calls: A Tensor of type int64.
+  output_shapes: A list of shapes (each a tf.TensorShape or list of ints) that has
+    length >= 1.The list of shapes being produced.
+  output_types: A list of tf.DTypes that has length >= 1.The type list for the return
+    values.
+  sloppy: An optional bool. Defaults to False.
+  sparse_keys: A list of strings.A list of string keys in the examples features.The
+    results for these keys will be returned as SparseTensor objects.
+  sparse_types: 'A list of tf.DTypes from: tf.float32, tf.int64, tf.string.A list
+    of DTypes of the same length as sparse_keys.Only tf.float32 (FloatList), tf.int64
+    (Int64List),and tf.string (BytesList) are supported.'
+name: tf.raw_ops.ExperimentalParseExampleDataset
+returns: A Tensor of type variant.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/ExperimentalParseExampleDataset
+warn_message:
+- arg_name or arg_desc too long

@@ -1,0 +1,16 @@
+args:
+  diag: ' Shape [B1,...,Bb, N] Tensor with b >= 0 N >= 0.The diagonal of the operator.  Allowed
+    dtypes: float16, float32,  float64, complex64, complex128.'
+  is_non_singular: ' Expect that this operator is non-singular.'
+  is_positive_definite: ' Expect that this operator is positive definite,meaning the
+    quadratic form x^H A x has positive real part for allnonzero x.  Note that we
+    do not require the operator to beself-adjoint to be positive-definite.  See:https://en.wikipedia.org/wiki/Positive-definite_matrix#Extension_for_non-symmetric_matrices'
+  is_self_adjoint: ' Expect that this operator is equal to its hermitiantranspose.  If
+    diag.dtype is real, this is auto-set to True.'
+  is_square: ' Expect that this operator acts like square [batch] matrices.'
+  name: A name for this LinearOperator.
+error_message: Multiple args
+name: tf.linalg.LinearOperatorDiag
+url: https://www.tensorflow.org/api_docs/python/tf/linalg/LinearOperatorDiag
+warn_message:
+- arg_name or arg_desc too long

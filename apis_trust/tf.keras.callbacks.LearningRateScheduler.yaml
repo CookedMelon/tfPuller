@@ -1,0 +1,6 @@
+args:
+  schedule: a function that takes an epoch index (integer, indexed from 0)and current
+    learning rate (float) as inputs and returns a newlearning rate as output (float).
+  verbose: 'int. 0: quiet, 1: update messages.'
+name: tf.keras.callbacks.LearningRateScheduler
+url: https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/LearningRateScheduler

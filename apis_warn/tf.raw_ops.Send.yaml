@@ -1,0 +1,16 @@
+args:
+  client_terminated: An optional bool. Defaults to False.If set to true, this indicates
+    that the node was addedto the graph as a result of a client-side feed or fetch
+    of Tensor data,in which case the corresponding send or recv is expected to be
+    managedlocally by the caller.
+  name: A name for the operation (optional).
+  recv_device: A string. The name of the device receiving the tensor.
+  send_device: A string. The name of the device sending the tensor.
+  send_device_incarnation: An int. The current incarnation of send_device.
+  tensor: A Tensor. The tensor to send.
+  tensor_name: A string. The name of the tensor to send.
+name: tf.raw_ops.Send
+returns: The created Operation.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/Send
+warn_message:
+- arg_name or arg_desc too long

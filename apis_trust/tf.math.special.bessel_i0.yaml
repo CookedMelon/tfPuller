@@ -1,0 +1,7 @@
+args:
+  name: A name for the operation (optional).
+  x: 'A Tensor or SparseTensor. Must be one of the following types: half,float32,
+    float64.'
+name: tf.math.special.bessel_i0
+returns: A Tensor or SparseTensor, respectively. Has the same type as x.
+url: https://www.tensorflow.org/api_docs/python/tf/math/special/bessel_i0

@@ -1,0 +1,19 @@
+args:
+  from_logits: Whether y_pred is expected to be a logits tensor. Bydefault, we assume
+    that y_pred encodes a probabilitydistribution.
+  ignore_class: Optional integer. The ID of a class to be ignoredduring loss computation.
+    This is useful, for example, insegmentation problems featuring a "void" class
+    (commonly -1 or255) in segmentation maps.By default (ignore_class=None), all classes
+    are considered.
+  name: Optional name for the instance.Defaults to 'sparse_categorical_crossentropy'.
+  reduction: Type of tf.keras.losses.Reduction to apply toloss. Default value is AUTO.
+    AUTO indicates that thereduction ption will be determined by the usage context.
+    Foralmost all cases this defaults to SUM_OVER_BATCH_SIZE. Whenused under a tf.distribute.Strategy,
+    except viaModel.compile() and Model.fit(), using AUTO orSUM_OVER_BATCH_SIZE will
+    raise an error. Please see thiscustom training tutorialfor more details.
+error_message: Multiple args
+name: tf.losses.SparseCategoricalCrossentropy
+url: https://www.tensorflow.org/api_docs/python/tf/losses/SparseCategoricalCrossentropy
+warn_message:
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long

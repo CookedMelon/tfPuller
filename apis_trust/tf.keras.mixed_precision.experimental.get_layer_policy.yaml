@@ -1,0 +1,2 @@
+name: tf.keras.mixed_precision.experimental.get_layer_policy
+url: https://www.tensorflow.org/api_docs/python/tf/keras/mixed_precision/experimental/get_layer_policy

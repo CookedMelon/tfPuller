@@ -1,0 +1,6 @@
+args:
+  checkpoint_dir: The directory of checkpoints.
+  latest_filename: Optional name of the checkpoint file.  Default to'checkpoint'.
+name: tf.train.get_checkpoint_state
+returns: A CheckpointState if the state was available, Noneotherwise.
+url: https://www.tensorflow.org/api_docs/python/tf/train/get_checkpoint_state

@@ -1,0 +1,21 @@
+args:
+  biases: A list with the same length as weights of Tensor objects with the same type
+    as weights.
+  direction: 'An optional string from: "unidirectional", "bidirectional". Defaults
+    to "unidirectional".'
+  dropout: An optional float. Defaults to 0.
+  input_mode: 'An optional string from: "linear_input", "skip_input", "auto_select".
+    Defaults to "linear_input".'
+  input_size: A Tensor of type int32.
+  name: A name for the operation (optional).
+  num_layers: A Tensor of type int32.
+  num_units: A Tensor of type int32.
+  rnn_mode: 'An optional string from: "rnn_relu", "rnn_tanh", "lstm", "gru". Defaults
+    to "lstm".'
+  seed: An optional int. Defaults to 0.
+  seed2: An optional int. Defaults to 0.
+  weights: 'A list of at least 1 Tensor objects with the same type in: bfloat16, half,
+    float32, float64.'
+name: tf.raw_ops.CudnnRNNCanonicalToParams
+returns: A Tensor. Has the same type as weights.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/CudnnRNNCanonicalToParams

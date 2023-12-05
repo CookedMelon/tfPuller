@@ -1,0 +1,5 @@
+args:
+  type_value: A value that can be converted to a tf.DType object.
+name: tf.dtypes.as_dtype
+returns: A DType corresponding to type_value.
+url: https://www.tensorflow.org/api_docs/python/tf/dtypes/as_dtype

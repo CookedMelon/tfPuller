@@ -1,0 +1,7 @@
+args:
+  log_mel_spectrograms: A [..., num_mel_bins] float32/float64 Tensorof log-magnitude
+    mel-scale spectrograms.
+  name: An optional name for the operation.
+name: tf.signal.mfccs_from_log_mel_spectrograms
+returns: A [..., num_mel_bins] float32/float64 Tensor of the MFCCs oflog_mel_spectrograms.
+url: https://www.tensorflow.org/api_docs/python/tf/signal/mfccs_from_log_mel_spectrograms

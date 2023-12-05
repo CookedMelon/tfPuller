@@ -1,0 +1,7 @@
+args:
+  deleter: A Tensor of type variant.
+  handle: A Tensor of type resource.
+  name: A name for the operation (optional).
+name: tf.raw_ops.DeleteMemoryCache
+returns: The created Operation.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/DeleteMemoryCache

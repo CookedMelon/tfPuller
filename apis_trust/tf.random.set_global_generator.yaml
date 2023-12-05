@@ -1,0 +1,4 @@
+args:
+  generator: the new Generator object.
+name: tf.random.set_global_generator
+url: https://www.tensorflow.org/api_docs/python/tf/random/set_global_generator

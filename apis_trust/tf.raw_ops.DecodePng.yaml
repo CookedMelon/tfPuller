@@ -1,0 +1,9 @@
+args:
+  channels: An optional int. Defaults to 0.Number of color channels for the decoded
+    image.
+  contents: A Tensor of type string. 0-D.  The PNG-encoded image.
+  dtype: 'An optional tf.DType from: tf.uint8, tf.uint16. Defaults to tf.uint8.'
+  name: A name for the operation (optional).
+name: tf.raw_ops.DecodePng
+returns: A Tensor of type dtype.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/DecodePng

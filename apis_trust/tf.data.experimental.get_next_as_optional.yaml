@@ -1,0 +1,6 @@
+args:
+  iterator: A tf.data.Iterator.
+name: tf.data.experimental.get_next_as_optional
+returns: A tf.experimental.Optional object which either contains the next elementof
+  the iterator (if it exists) or no value.
+url: https://www.tensorflow.org/api_docs/python/tf/data/experimental/get_next_as_optional

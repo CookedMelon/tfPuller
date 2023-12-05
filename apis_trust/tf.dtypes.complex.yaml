@@ -1,0 +1,7 @@
+args:
+  imag: A Tensor. Must have the same type as real.
+  name: A name for the operation (optional).
+  real: 'A Tensor. Must be one of the following types: float32, float64.'
+name: tf.dtypes.complex
+returns: A Tensor of type complex64 or complex128.
+url: https://www.tensorflow.org/api_docs/python/tf/dtypes/complex

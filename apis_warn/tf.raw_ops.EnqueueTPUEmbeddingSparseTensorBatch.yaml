@@ -1,0 +1,40 @@
+args:
+  aggregation_weights: 'A list with the same length as sample_indices of Tensor objects
+    with the same type in: float32, float64.A list of rank 1 Tensors containing per
+    training exampleaggregation weights. It corresponds to sp_weights.values inembedding_lookup_sparse().'
+  combiners: An optional list of strings. Defaults to [].A list of string scalars,
+    one for each embedding table that specifyhow to normalize the embedding activations
+    after weighted summation.Supported combiners are 'mean', 'sum', or 'sqrtn'. It
+    is invalid to havethe sum of the weights be 0 for 'mean' or the sum of the squared
+    weights be0 for 'sqrtn'. If combiners isn't passed, the default is to use 'sum'
+    forall tables.
+  device_ordinal: An optional int. Defaults to -1.The TPU device to use. Should be
+    >= 0 and less than the numberof TPU cores in the task on which the node is placed.
+  embedding_indices: 'A list with the same length as sample_indices of Tensor objects
+    with the same type in: int32, int64.A list of rank 1 Tensors, indices into the
+    embedding tables.It corresponds to sp_ids.values in embedding_lookup_sparse().'
+  max_sequence_lengths: An optional list of ints. Defaults to [].
+  mode_override: A Tensor of type string.A string input that overrides the mode specified
+    in theTPUEmbeddingConfiguration. Supported values are {'unspecified', 'inference','training',
+    'backward_pass_only'}. When set to 'unspecified', the mode setin TPUEmbeddingConfiguration
+    is used, otherwise mode_override is used.
+  name: A name for the operation (optional).
+  num_features: An optional list of ints. Defaults to [].
+  sample_indices: 'A list of at least 1 Tensor objects with the same type in: int32,
+    int64.A list of rank 1 Tensors specifying the training example towhich the corresponding
+    embedding_indices and aggregation_weights valuesbelong. It corresponds to sp_ids.indices[:,0]
+    in  embedding_lookup_sparse().'
+  table_ids: A list of ints.A list of integers specifying the identifier of the embedding
+    table(offset of TableDescriptor in the TPUEmbeddingConfiguration) to lookup thecorresponding
+    input. The ith input is looked up using table_ids[i]. The sizeof the table_ids
+    list must be equal to that of sample_indices,embedding_indices and aggregation_weights.
+name: tf.raw_ops.EnqueueTPUEmbeddingSparseTensorBatch
+returns: The created Operation.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/EnqueueTPUEmbeddingSparseTensorBatch
+warn_message:
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long

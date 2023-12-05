@@ -1,0 +1,12 @@
+args:
+  class_id: (Optional) Integer class ID for which we want binary metrics.This must
+    be in the half-open interval [0, num_classes), wherenum_classes is the last dimension
+    of predictions.
+  dtype: (Optional) data type of the metric result.
+  name: (Optional) string name of the metric instance.
+  num_thresholds: (Optional) The number of thresholds touse for matching the given
+    precision. Defaults to 200.
+  precision: A scalar value in range [0, 1].
+error_message: Multiple args
+name: tf.keras.metrics.RecallAtPrecision
+url: https://www.tensorflow.org/api_docs/python/tf/keras/metrics/RecallAtPrecision

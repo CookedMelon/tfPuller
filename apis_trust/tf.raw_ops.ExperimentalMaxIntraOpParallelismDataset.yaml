@@ -1,0 +1,11 @@
+args:
+  input_dataset: A Tensor of type variant.
+  max_intra_op_parallelism: A Tensor of type int64.Identifies the maximum intra-op
+    parallelism to use.
+  name: A name for the operation (optional).
+  output_shapes: A list of shapes (each a tf.TensorShape or list of ints) that has
+    length >= 1.
+  output_types: A list of tf.DTypes that has length >= 1.
+name: tf.raw_ops.ExperimentalMaxIntraOpParallelismDataset
+returns: A Tensor of type variant.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/ExperimentalMaxIntraOpParallelismDataset

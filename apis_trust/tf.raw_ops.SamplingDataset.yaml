@@ -1,0 +1,13 @@
+args:
+  input_dataset: A Tensor of type variant.
+  name: A name for the operation (optional).
+  output_shapes: A list of shapes (each a tf.TensorShape or list of ints) that has
+    length >= 1.
+  output_types: A list of tf.DTypes that has length >= 1.
+  rate: A Tensor of type float32.A scalar representing the sample rate. Each element
+    of input_dataset isretained with this probability, independent of all other elements.
+  seed: A Tensor of type int64.A scalar representing seed of random number generator.
+  seed2: A Tensor of type int64.A scalar representing seed2 of random number generator.
+name: tf.raw_ops.SamplingDataset
+returns: A Tensor of type variant.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/SamplingDataset

@@ -1,0 +1,11 @@
+args:
+  communicator: A Tensor of type resource.
+  group_assignment: A Tensor of type int32.
+  input: 'A Tensor. Must be one of the following types: bfloat16, float32, half, float64,
+    int32, int64.'
+  name: A name for the operation (optional).
+  reduction: 'A string from: "Min", "Max", "Mul", "Add".'
+  timeout_seconds: An optional float. Defaults to 0.
+name: tf.raw_ops.CollectiveReduceV3
+returns: A Tensor. Has the same type as input.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/CollectiveReduceV3

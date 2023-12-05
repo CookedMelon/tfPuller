@@ -1,0 +1,59 @@
+args:
+  activation: Activation function to use. By default hyperbolic tangentactivation
+    function is applied (tanh(x)).
+  activity_regularizer: Regularizer function applied to.
+  bias_constraint: Constraint function applied to the bias vector.
+  bias_initializer: Initializer for the bias vector.
+  bias_regularizer: Regularizer function applied to the bias vector.
+  data_format: A string, one of channels_last (default) orchannels_first.  The ordering
+    of the dimensions in the inputs.channels_last corresponds to inputs with shape
+    (batch, time, ...,channels) while channels_first corresponds to inputs with shape(batch,
+    time, channels, ...). When unspecified, usesimage_data_format value found in your
+    Keras config file at~/.keras/keras.json (if exists) else 'channels_last'.Defaults
+    to 'channels_last'.
+  dilation_rate: An integer or tuple/list of n integers, specifying thedilation rate
+    to use for dilated convolution. Currently, specifying anydilation_rate value !=
+    1 is incompatible with specifying any stridesvalue != 1.
+  dropout: Float between 0 and 1. Fraction of the units to drop for thelinear transformation
+    of the inputs.
+  filters: Integer, the dimensionality of the output space (i.e. the numberof output
+    filters in the convolution).
+  go_backwards: Boolean (default False). If True, process the input sequencebackwards.
+  kernel_constraint: Constraint function applied to the kernel weightsmatrix.
+  kernel_initializer: Initializer for the kernel weights matrix, used forthe linear
+    transformation of the inputs.
+  kernel_regularizer: Regularizer function applied to the kernel weightsmatrix.
+  kernel_size: An integer or tuple/list of n integers, specifying thedimensions of
+    the convolution window.
+  padding: One of "valid" or "same" (case-insensitive). "valid" meansno padding. "same"
+    results in padding evenly to the left/right orup/down of the input such that output
+    has the same height/widthdimension as the input.
+  recurrent_activation: Activation function to use for the recurrent step.
+  recurrent_constraint: Constraint function applied to therecurrent_kernel weights
+    matrix.
+  recurrent_dropout: Float between 0 and 1. Fraction of the units to dropfor the linear
+    transformation of the recurrent state.
+  recurrent_initializer: Initializer for the recurrent_kernel weightsmatrix, used
+    for the linear transformation of the recurrent state.
+  recurrent_regularizer: Regularizer function applied to therecurrent_kernel weights
+    matrix.
+  return_sequences: Boolean. Whether to return the last output in the outputsequence,
+    or the full sequence. (default False)
+  return_state: Boolean Whether to return the last state in addition to theoutput.
+    (default False)
+  stateful: Boolean (default False). If True, the last state for each sampleat index
+    i in a batch will be used as initial state for the sample ofindex i in the following
+    batch.
+  strides: An integer or tuple/list of n integers, specifying the strides ofthe convolution.
+    Specifying any stride value != 1 is incompatible withspecifying any dilation_rate
+    value != 1.
+  unit_forget_bias: Boolean. If True, add 1 to the bias of the forget gateat initialization.
+    Use in combination with bias_initializer="zeros".This is recommended in Jozefowicz
+    et al., 2015
+  use_bias: Boolean, whether the layer uses a bias vector.
+name: tf.keras.layers.ConvLSTM2D
+url: https://www.tensorflow.org/api_docs/python/tf/keras/layers/ConvLSTM2D
+warn_message:
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long

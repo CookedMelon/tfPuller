@@ -1,0 +1,14 @@
+args:
+  axis: 'A Tensor. Must be one of the following types: int32, int64.The dimensions
+    to reduce. Must be in the range[-rank(input), rank(input)).'
+  input: 'A Tensor. Must be one of the following types: float32, float64, int32, uint8,
+    int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, qint16, quint16,
+    uint16, complex128, half, uint32, uint64.The tensor to reduce.'
+  keep_dims: An optional bool. Defaults to False.If true, retain reduced dimensions
+    with length 1.
+  name: A name for the operation (optional).
+name: tf.raw_ops.EuclideanNorm
+returns: A Tensor. Has the same type as input.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/EuclideanNorm
+warn_message:
+- arg_name or arg_desc too long

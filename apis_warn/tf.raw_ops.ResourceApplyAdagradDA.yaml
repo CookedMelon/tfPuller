@@ -1,0 +1,20 @@
+args:
+  global_step: A Tensor of type int64.Training step number. Must be a scalar.
+  grad: 'A Tensor. Must be one of the following types: float32, float64, int32, uint8,
+    int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, qint16, quint16,
+    uint16, complex128, half, uint32, uint64.The gradient.'
+  gradient_accumulator: A Tensor of type resource.Should be from a Variable().
+  gradient_squared_accumulator: A Tensor of type resource.Should be from a Variable().
+  l1: A Tensor. Must have the same type as grad.L1 regularization. Must be a scalar.
+  l2: A Tensor. Must have the same type as grad.L2 regularization. Must be a scalar.
+  lr: A Tensor. Must have the same type as grad.Scaling factor. Must be a scalar.
+  name: A name for the operation (optional).
+  use_locking: An optional bool. Defaults to False.If True, updating of the var and
+    accum tensors will be protected bya lock; otherwise the behavior is undefined,
+    but may exhibit less contention.
+  var: A Tensor of type resource. Should be from a Variable().
+name: tf.raw_ops.ResourceApplyAdagradDA
+returns: The created Operation.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/ResourceApplyAdagradDA
+warn_message:
+- arg_name or arg_desc too long

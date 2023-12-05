@@ -1,0 +1,7 @@
+args:
+  a: 'A Tensor. Must be one of the following types: float32, float64.'
+  name: A name for the operation (optional).
+  x: A Tensor. Must have the same type as a.
+name: tf.raw_ops.IgammaGradA
+returns: A Tensor. Has the same type as a.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/IgammaGradA

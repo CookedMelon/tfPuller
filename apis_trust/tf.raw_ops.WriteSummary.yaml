@@ -1,0 +1,10 @@
+args:
+  name: A name for the operation (optional).
+  step: A Tensor of type int64.
+  summary_metadata: A Tensor of type string.
+  tag: A Tensor of type string.
+  tensor: A Tensor.
+  writer: A Tensor of type resource.
+name: tf.raw_ops.WriteSummary
+returns: The created Operation.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/WriteSummary

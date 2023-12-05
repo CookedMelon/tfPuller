@@ -1,0 +1,4 @@
+error_message: Multiple Returns
+name: tf.data.Iterator
+returns: A (nested) structure of values matching tf.data.Iterator.element_spec.
+url: https://www.tensorflow.org/api_docs/python/tf/data/Iterator

@@ -1,0 +1,7 @@
+args:
+  image: RGB image or images. The size of the last dimension must be 3.
+  name: A name for this operation (optional).
+  saturation_factor: float. Factor to multiply the saturation by.
+name: tf.image.adjust_saturation
+returns: Adjusted image(s), same shape and DType as image.
+url: https://www.tensorflow.org/api_docs/python/tf/image/adjust_saturation

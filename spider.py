@@ -24,7 +24,7 @@ from selenium.webdriver.support import expected_conditions as EC
 # chrome_options.binary_location = "D:\Downloads\Win_911514_chrome-win\chrome-win\chrome.exe"
 # 初始化浏览器为chrome浏览器
 # 指定绝对路径的方式（可选）
-path = "D:\environment\conda\spider\geckodriver.exe"
+path = "D:\env\geckodriver.exe"
 # path = "D:\environment\conda\spider\chromedriver.exe"
 # driver = webdriver.Chrome(path)
 # driver = webdriver.Chrome(service=Service(path), options=chrome_options)

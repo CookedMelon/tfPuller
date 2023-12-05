@@ -1,0 +1,11 @@
+args:
+  config: An optional string. Defaults to "".
+  name: A name for the operation (optional).
+  num_shards: An int.
+  shard_id: An int.
+  table_id: An optional int. Defaults to -1.
+  table_name: An optional string. Defaults to "".
+error_message: tds len error.[Returns need 1 tds]
+name: tf.raw_ops.RetrieveTPUEmbeddingMomentumParameters
+returns: A tuple of Tensor objects (parameters, momenta).
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/RetrieveTPUEmbeddingMomentumParameters

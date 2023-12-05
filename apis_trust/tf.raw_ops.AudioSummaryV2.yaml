@@ -1,0 +1,11 @@
+args:
+  max_outputs: An optional int that is >= 1. Defaults to 3.Max number of batch elements
+    to generate audio for.
+  name: A name for the operation (optional).
+  sample_rate: A Tensor of type float32.The sample rate of the signal in hertz.
+  tag: A Tensor of type string.Scalar. Used to build the tag attribute of the summary
+    values.
+  tensor: A Tensor of type float32. 2-D of shape [batch_size, frames].
+name: tf.raw_ops.AudioSummaryV2
+returns: A Tensor of type string.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/AudioSummaryV2

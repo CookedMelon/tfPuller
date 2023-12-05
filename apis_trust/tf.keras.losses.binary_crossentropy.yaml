@@ -1,0 +1,12 @@
+args:
+  axis: The axis along which the mean is computed. Defaults to -1.
+  from_logits: Whether y_pred is expected to be a logits tensor. Bydefault, we assume
+    that y_pred encodes a probability distribution.
+  label_smoothing: Float in [0, 1]. If > 0 then smooth the labels bysqueezing them
+    towards 0.5 That is, using1. - 0.5 * label_smoothing for the target class and0.5
+    * label_smoothing for the non-target class.
+  y_pred: The predicted values. shape = [batch_size, d0, .. dN].
+  y_true: Ground truth values. shape = [batch_size, d0, .. dN].
+name: tf.keras.losses.binary_crossentropy
+returns: Binary crossentropy loss value. shape = [batch_size, d0, .. dN-1].
+url: https://www.tensorflow.org/api_docs/python/tf/keras/losses/binary_crossentropy

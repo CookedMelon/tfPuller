@@ -1,0 +1,6 @@
+args:
+  config: A Python dictionary, the output of get_config.
+error_message: Multiple Returns
+name: tf.keras.constraints.NonNeg
+returns: A tf.keras.constraints.Constraint instance.
+url: https://www.tensorflow.org/api_docs/python/tf/keras/constraints/NonNeg

@@ -1,0 +1,22 @@
+args:
+  data_format: A string. 'NWC' and 'NCW' are supported.
+  dilations: An int or list of ints that has length 1 or 3 whichdefaults to 1. The
+    dilation factor for each dimension of input. If set tok > 1, there will be k-1
+    skipped cells between each filter element on thatdimension. Dilations in the batch
+    and depth dimensions must be 1.
+  filters: A 3-D Tensor with the same type as input and shape[filter_width, output_channels,
+    in_channels].  filter'sin_channels dimension must match that of input.
+  input: A 3-D Tensor of type float and shape[batch, in_width, in_channels] for NWC
+    data format or[batch, in_channels, in_width] for NCW data format.
+  name: Optional name for the returned tensor.
+  output_shape: A 1-D Tensor, containing three elements, representing theoutput shape
+    of the deconvolution op.
+  padding: A string, either 'VALID' or 'SAME'. The padding algorithm. Seeherefor more
+    information.
+  strides: An int or list of ints that has length 1 or 3.  The number ofentries by
+    which the filter is moved right at each step.
+name: tf.nn.conv1d_transpose
+returns: A Tensor with the same type as input.
+url: https://www.tensorflow.org/api_docs/python/tf/nn/conv1d_transpose
+warn_message:
+- arg_name or arg_desc too long

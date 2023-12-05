@@ -1,0 +1,6 @@
+args:
+  y_pred: The predicted values. shape = [batch_size, d0, .. dN].
+  y_true: Ground truth values. shape = [batch_size, d0, .. dN].
+name: tf.keras.metrics.mean_squared_error
+returns: Mean squared error values. shape = [batch_size, d0, .. dN-1].
+url: https://www.tensorflow.org/api_docs/python/tf/keras/metrics/mean_squared_error

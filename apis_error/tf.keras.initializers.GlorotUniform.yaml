@@ -1,0 +1,10 @@
+args:
+  seed: A Python integer. Used to make the behavior of the initializerdeterministic.
+    Note that a seeded initializer will not produce the samerandom values across multiple
+    calls, but multiple initializers willproduce the same sequence when constructed
+    with the same seed value.
+error_message: Multiple args
+name: tf.keras.initializers.GlorotUniform
+url: https://www.tensorflow.org/api_docs/python/tf/keras/initializers/GlorotUniform
+warn_message:
+- arg_name or arg_desc too long

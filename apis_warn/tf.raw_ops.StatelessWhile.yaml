@@ -1,0 +1,21 @@
+args:
+  body: A function decorated with @Defun.A function that takes a list of tensors and
+    returns anotherlist of tensors. Both lists have the same types as specifiedby
+    T.
+  cond: 'A function decorated with @Defun.A function takes ''input'' and returns a
+    tensor.  If the tensor isa scalar of non-boolean, the scalar is converted to a
+    booleanaccording to the following rule: if the scalar is a numericalvalue, non-zero
+    means True and zero means False; if the scalar isa string, non-empty means True
+    and empty means False. If thetensor is not a scalar, non-emptiness means True
+    and Falseotherwise.This should only be used when the while condition and body
+    functionsdo not have stateful ops.'
+  input: A list of Tensor objects.A list of input tensors whose types are T.
+  name: A name for the operation (optional).
+  output_shapes: An optional list of shapes (each a tf.TensorShape or list of ints).
+    Defaults to [].
+  parallel_iterations: An optional int. Defaults to 10.
+name: tf.raw_ops.StatelessWhile
+returns: A list of Tensor objects. Has the same type as input.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/StatelessWhile
+warn_message:
+- arg_name or arg_desc too long

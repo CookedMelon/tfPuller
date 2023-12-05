@@ -1,0 +1,6 @@
+args:
+  name: A name for the operation (optional).
+  value: A Tensor. The tensor to be stored.
+name: tf.raw_ops.GetSessionHandle
+returns: A Tensor of type string.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/GetSessionHandle

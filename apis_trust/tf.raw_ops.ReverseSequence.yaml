@@ -1,0 +1,11 @@
+args:
+  batch_dim: An optional int. Defaults to 0.The dimension along which reversal is
+    performed.
+  input: A Tensor. The input to reverse.
+  name: A name for the operation (optional).
+  seq_dim: An int. The dimension which is partially reversed.
+  seq_lengths: 'A Tensor. Must be one of the following types: int32, int64.1-D with
+    length input.dims(batch_dim) andmax(seq_lengths) <= input.dims(seq_dim)'
+name: tf.raw_ops.ReverseSequence
+returns: A Tensor. Has the same type as input.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/ReverseSequence

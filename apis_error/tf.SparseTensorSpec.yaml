@@ -1,5 +1,6 @@
 args:
   dtype: tf.DType of values in the SparseTensor.
   shape: The dense shape of the SparseTensor, or None to allow any denseshape.
+error_message: Multiple args
 name: tf.SparseTensorSpec
 url: https://www.tensorflow.org/api_docs/python/tf/SparseTensorSpec

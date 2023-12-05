@@ -1,0 +1,7 @@
+args:
+  dtype: The desired output DType.
+  name: A name for the operation (optional).
+  value: A Tensor.
+name: tf.dtypes.saturate_cast
+returns: value safely cast to dtype.
+url: https://www.tensorflow.org/api_docs/python/tf/dtypes/saturate_cast

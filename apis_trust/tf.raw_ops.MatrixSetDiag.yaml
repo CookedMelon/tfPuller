@@ -1,0 +1,7 @@
+args:
+  diagonal: A Tensor. Must have the same type as input.Rank k, where k >= 1.
+  input: A Tensor. Rank k+1, where k >= 1.
+  name: A name for the operation (optional).
+name: tf.raw_ops.MatrixSetDiag
+returns: A Tensor. Has the same type as input.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/MatrixSetDiag

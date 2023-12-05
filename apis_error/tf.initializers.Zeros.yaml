@@ -1,0 +1,6 @@
+args:
+  config: A Python dictionary, the output of get_config().
+error_message: Multiple Returns
+name: tf.initializers.Zeros
+returns: An Initializer instance.
+url: https://www.tensorflow.org/api_docs/python/tf/initializers/Zeros

@@ -1,0 +1,16 @@
+args:
+  data_format: A string,one of channels_last (default) or channels_first.The ordering
+    of the dimensions in the inputs.channels_last corresponds to inputs with shape(batch,
+    height, width, channels) while channels_firstcorresponds to inputs with shape(batch,
+    channels, height, width).When unspecified, usesimage_data_format value found in
+    your Keras config file at ~/.keras/keras.json (if exists) else 'channels_last'.Defaults
+    to 'channels_last'.
+  keepdims: A boolean, whether to keep the spatial dimensions or not.If keepdims is
+    False (default), the rank of the tensor is reducedfor spatial dimensions.If keepdims
+    is True, the spatial dimensions are retained withlength 1.The behavior is the
+    same as for tf.reduce_max or np.max.
+name: tf.keras.layers.GlobalMaxPooling2D
+url: https://www.tensorflow.org/api_docs/python/tf/keras/layers/GlobalMaxPooling2D
+warn_message:
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long

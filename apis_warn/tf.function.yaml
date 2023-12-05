@@ -1,0 +1,57 @@
+args:
+  autograph: Whether autograph should be applied on func before tracing agraph. Data-dependent
+    Python control flow statements requireautograph=True. For more information, see
+    thetf.function and AutoGraph guide.
+  experimental_attributes: Optional dictionary of attributes to include in thegenerated
+    FunctionDefs.
+  experimental_autograph_options: Optional tuple oftf.autograph.experimental.Feature
+    values.
+  experimental_compile: Deprecated alias to 'jit_compile'.
+  experimental_follow_type_hints: Deprecated. Please use input_signature orreduce_retracing
+    instead.
+  experimental_implements: If provided, contains a name of a "known" functionthis
+    implements. For example "mycompany.my_recurrent_cell".This is stored as an attribute
+    in inference function,which can then be detected when processing serialized function.See
+    standardizing composite opsfor details.  For an example of utilizing this attribute
+    see thisexampleThe code above automatically detects and substitutes function thatimplements
+    "embedded_matmul" and allows TFLite to substitute its ownimplementations. For
+    instance, a tensorflow user can use this attribute to mark that their function
+    also implementsembedded_matmul (perhaps more efficiently!)by specifying it using
+    this parameter:@tf.function(experimental_implements="embedded_matmul")This can
+    either be specified as just the string name of the function ora NameAttrList corresponding
+    to a list of key-value attributes associatedwith the function name. The name of
+    the function will be in the 'name'field of the NameAttrList. To define a formal
+    TF op for this functionimplements, try the experimental composite TFproject.
+  experimental_relax_shapes: Deprecated. Use reduce_retracinginstead.
+  func: The function to be compiled. If func is None, tf.function returnsa decorator
+    that can be invoked with a single argument - func. In otherwords, tf.function(input_signature=...)(func)
+    is equivalent totf.function(func, input_signature=...). The former can be used
+    asdecorator.
+  input_signature: A possibly nested sequence of tf.TensorSpec objectsspecifying the
+    shapes and dtypes of the Tensors that will be supplied tothis function. If None,
+    a separate function is instantiated for eachinferred input signature.  If input_signature
+    is specified, every input tofunc must be a Tensor, and func cannot accept **kwargs.
+  jit_compile: If True, compiles the function usingXLA. XLA performs compiler optimizations,such
+    as fusion, and attempts to emit more efficient code. This maydrastically improve
+    the performance. If set to True,the whole function needs to be compilable by XLA,
+    or anerrors.InvalidArgumentError is thrown.If None (default), compiles the function
+    with XLA when running on TPUand goes through the regular function execution path
+    when running onother devices.If False, executes the function without XLA compilation.  Set
+    this valueto False when directly running a multi-device function on TPUs (e.g.
+    twoTPU cores, one TPU core and its host CPU).Not all functions are compilable,
+    see a list ofsharp corners.
+  reduce_retracing: When True, tf.function attempts to reduce theamount of retracing,
+    for example by using more generic shapes. Thiscan be controlled for user objects
+    by customizing their associatedtf.types.experimental.TraceType.
+name: tf.function
+returns: If func is not None, returns a tf.types.experimental.GenericFunction.If func
+  is None, returns a decorator that, when invoked with a singlefunc argument, returns
+  a tf.types.experimental.GenericFunction.
+url: https://www.tensorflow.org/api_docs/python/tf/function
+warn_message:
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long
+- ret_desc too long

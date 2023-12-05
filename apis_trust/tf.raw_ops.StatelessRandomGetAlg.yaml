@@ -1,0 +1,5 @@
+args:
+  name: A name for the operation (optional).
+name: tf.raw_ops.StatelessRandomGetAlg
+returns: A Tensor of type int32.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/StatelessRandomGetAlg

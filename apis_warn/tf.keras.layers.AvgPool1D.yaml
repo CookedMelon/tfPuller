@@ -1,0 +1,16 @@
+args:
+  data_format: A string,one of channels_last (default) or channels_first.The ordering
+    of the dimensions in the inputs.channels_last corresponds to inputs with shape(batch,
+    steps, features) while channels_firstcorresponds to inputs with shape(batch, features,
+    steps).
+  padding: One of "valid" or "same" (case-insensitive)."valid" means no padding. "same"
+    results in padding evenly tothe left/right or up/down of the input such that output
+    has the sameheight/width dimension as the input.
+  pool_size: Integer, size of the average pooling windows.
+  strides: Integer, or None. Factor by which to downscale.E.g. 2 will halve the input.If
+    None, it will default to pool_size.
+name: tf.keras.layers.AvgPool1D
+url: https://www.tensorflow.org/api_docs/python/tf/keras/layers/AvgPool1D
+warn_message:
+- arg_name or arg_desc too long
+- arg_name or arg_desc too long

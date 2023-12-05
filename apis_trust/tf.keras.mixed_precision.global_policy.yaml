@@ -1,0 +1,3 @@
+name: tf.keras.mixed_precision.global_policy
+returns: The global Policy.
+url: https://www.tensorflow.org/api_docs/python/tf/keras/mixed_precision/global_policy

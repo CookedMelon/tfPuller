@@ -1,0 +1,10 @@
+args:
+  input_datasets: A list of at least 2 Tensor objects with type variant.
+  name: A name for the operation (optional).
+  num_experiments: An int.
+  output_shapes: A list of shapes (each a tf.TensorShape or list of ints) that has
+    length >= 1.
+  output_types: A list of tf.DTypes that has length >= 1.
+name: tf.raw_ops.ChooseFastestDataset
+returns: A Tensor of type variant.
+url: https://www.tensorflow.org/api_docs/python/tf/raw_ops/ChooseFastestDataset
