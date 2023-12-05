@@ -1,0 +1,3 @@
+[submodule "ConstraintGen"]
+	path = ConstraintGen
+	url = git@github.com:CookedMelon/ConstraintGen.git
